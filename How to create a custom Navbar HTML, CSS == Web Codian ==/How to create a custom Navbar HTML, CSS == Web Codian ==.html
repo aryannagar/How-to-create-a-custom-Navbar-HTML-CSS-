@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: #202124;
+            font-family: 'Roboto', sans-serif;
+        }
+        nav{
+            border-radius: 50px;
+            background: #fff;
+            position: absolute;
+            padding: 20px 30px 0 30px;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+        li{
+            display: inline-block;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+            font-size: 30px;
+            padding: 0 10px;
+        }
+        a:hover{
+            color: #FF0000;
+        }
+        a::after{
+            content: '';
+            display: block;
+            width: 0px;
+            height: 2px;
+            background: #FF0000;
+            transition: width .3s;
+        }
+        a:hover::after{
+            padding: 0 -15%;
+            width: 80%;
+            transition: width .3s;
+            margin-left: 10%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </nav>
+</body>
+</html>
